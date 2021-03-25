@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url ./goit-js-hw-10-food-service/"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./goit-js-hw-10-food-service/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Tania-Tatula/goit-js-hw-10-food-service/issues"
   },
-  "homepage": "https://github.com/Tania-Tatula/goit-js-hw-10-food-service#readme",
+  "homepage": "https://Tania-Tatula.github.io/goit-js-hw-10-food-service",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2"
